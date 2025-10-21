@@ -1,12 +1,88 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Oak HR Solutions</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oak HR Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+      <h1 class="text-2xl font-bold text-emerald-700">Oak HR Solutions</h1>
+      <nav class="space-x-6 text-sm font-medium text-gray-700">
+        <a href="#about" class="hover:text-emerald-600">About</a>
+        <a href="#services" class="hover:text-emerald-600">Services</a>
+        <a href="#contact" class="hover:text-emerald-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-emerald-700 text-white text-center py-20 px-6">
+    <h2 class="text-4xl font-extrabold mb-4">Empowering People. Elevating Business.</h2>
+    <p class="max-w-2xl mx-auto text-lg opacity-90">
+      We help organizations in Nigeria and beyond build efficient, motivated, and high-performing teams.
+    </p>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 px-6 max-w-5xl mx-auto text-center">
+    <h3 class="text-3xl font-semibold text-emerald-700 mb-4">About Us</h3>
+    <p class="text-gray-700 leading-relaxed">
+      Oak HR Solutions is a Benin City–based human resources consultancy focused on people, process, and performance.
+      Our mission is to align talent strategy with organizational growth through smart hiring, employee engagement,
+      and professional development.
+    </p>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="bg-white py-16 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h3 class="text-3xl font-semibold text-emerald-700 mb-8">Our Services</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-6 bg-gray-100 rounded-xl shadow-sm">
+          <h4 class="text-xl font-semibold text-emerald-700 mb-2">Recruitment & Talent Acquisition</h4>
+          <p class="text-gray-600 text-sm">End-to-end hiring support to help you find and retain top talent.</p>
+        </div>
+        <div class="p-6 bg-gray-100 rounded-xl shadow-sm">
+          <h4 class="text-xl font-semibold text-emerald-700 mb-2">Training & Development</h4>
+          <p class="text-gray-600 text-sm">Customized learning programs to build capacity and improve productivity.</p>
+        </div>
+        <div class="p-6 bg-gray-100 rounded-xl shadow-sm">
+          <h4 class="text-xl font-semibold text-emerald-700 mb-2">HR Policy & Compliance</h4>
+          <p class="text-gray-600 text-sm">Crafting clear policies and ensuring alignment with Nigerian labour laws.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 px-6 bg-emerald-50">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-3xl font-semibold text-emerald-700 mb-6">Contact Us</h3>
+      <p class="text-gray-700 mb-8">
+        Ready to transform your workforce? Send us a message — we’ll get back to you shortly.
+      </p>
+      <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-4 max-w-md mx-auto">
+        <input type="text" name="name" placeholder="Your Name" required
+          class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-600">
+        <input type="email" name="email" placeholder="Your Email" required
+          class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-600">
+        <textarea name="message" rows="4" placeholder="Your Message" required
+          class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-600"></textarea>
+        <button type="submit"
+          class="bg-emerald-700 text-white px-6 py-3 rounded-md hover:bg-emerald-800 transition">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-emerald-800 text-gray-100 text-center py-6 mt-10">
+    <p>© 2025 Oak HR Solutions | All rights reserved | info@oakhrsolutions.com | Benin City, Nigeria</p>
+  </footer>
+</body>
+  </html>
