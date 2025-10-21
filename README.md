@@ -1,16 +1,17 @@
-# Oak HR Solutions (GitHub-ready ZIP)
+# Oak HR Solutions (Vercel-ready ZIP)
 
-This is a Vite + React + Tailwind project prepared for quick deployment to Vercel.
+Sleek corporate build (Vite + React + Tailwind) prepared for GitHub -> Vercel deployment.
 
 ## Quick deploy (no terminal)
-1. Go to GitHub -> New Repository -> name it `oak-hr-solutions`.
-2. Click 'Add file' -> 'Upload files'. Drag the **contents** of this zip (do not upload the zip itself).
-3. Commit to `main`.
-4. Go to https://vercel.com/new -> Import Project -> choose your GitHub repo -> Deploy.
+1. Unzip this archive.
+2. Go to GitHub -> New Repository -> name it `oak-hr-solutions`.
+3. In the new repo, click 'Add file' -> 'Upload files'. Drag the *contents* of the unzipped folder (don't upload the zip file itself).
+4. Commit to `main`.
+5. Go to https://vercel.com/new -> Import Project -> choose your GitHub repo -> Deploy.
 
-## If using locally
-- Install dependencies: `npm install`
-- Run dev server: `npm run dev`
-- Build for production: `npm run build`
+## Local (optional)
+- Install: `npm install`
+- Dev server: `npm run dev`
+- Build: `npm run build` (output goes to `dist`)
 
-Forms are wired to Formspree (https://formspree.io). Update the endpoint in `src/App.jsx` if you want emails to go somewhere else.
+Forms use Formspree for email forwarding. Replace the endpoint in `src/App.jsx` with your own Formspree URL when ready.
